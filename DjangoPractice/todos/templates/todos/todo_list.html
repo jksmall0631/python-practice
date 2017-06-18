@@ -1,0 +1,7 @@
+{% for todo in todos %}
+    <div>
+        <p>published: {{ todo.published_date }}</p>
+        <h1><a href="">{{ todo.title }}</a></h1>
+        <p>{{ todo.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
